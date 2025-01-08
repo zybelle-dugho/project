@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Removed background-color, we'll use a background image instead */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    background-image: url('background.png'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat;
+        }
+
+header {
+    background-color: #fff; /* Added background color for better visual separation */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute logo and nav evenly */
+    align-items: center; /* Vertically align logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertically align logo and text */
+}
+
+.logo svg {
+    margin-right: 10px; /* Added margin between logo and text */
+}
+
+.logo h1 {
+    font-size: 2.5em; /* Increased font size for better readability */
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; /* Added margin for spacing between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Changed color for better contrast */
+}
+        
+.container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+img {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%;
+            height: auto;
+            cursor: pointer;
+        }
+p{
+            font-family: verdana;
+            font-size: 20px;
+            text-align: justify;
+        
+        }
+
+header {
+    background-color: #fff; /* Added background color for better visual separation */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute logo and nav evenly */
+    align-items: center; /* Vertically align logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {  /* Style for the image */
+    width: 70px;  /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.logo h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; /* Added margin for spacing between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Changed color for better contrast */
+}
+
+main {
+            
+            max-height: auto;
+            max-width: 700px;
+            margin: 8rem auto;
+            padding: 0.5rem;
+            background-color: rgba(128, 128, 128, 0.5);
+            text-align: center;
+            
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+        
+.article-container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+        
+img {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%;
+            height: auto;
+            cursor: pointer;
+}
+        
+.image-container {
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap;
+}
+
+.image-container img {
+            width: 30%; 
+            margin: 10px; 
+}
+
+
+@media (max-width: 768px) { 
+.image-container img {
+            width: 45%; 
+  }
+}
+        
+p{
+            font-family: verdana;
+            font-size: 20px;
+            text-align: justify;
+}        
+
+.button-container {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add some spacing above the button */
+    width: 100%; /* Ensure the container spans the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#backButton {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

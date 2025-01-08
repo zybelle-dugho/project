@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites</title>
+    <link rel="stylesheet" href="favorite.css">
+</head>
+<body>
+    <header>
+      <div class="logo">
+            <svg height="130" width="200">
+                <defs>
+                    <linearGradient id="grad1">
+                        <stop offset="10%" stop-color="#FF7F50" />
+                        <stop offset="100%" stop-color="#CC338B" />
+                    </linearGradient>
+                </defs>
+                <ellipse cx="100" cy="70" rx="65" ry="45" fill="url(#grad1)" />
+                <text fill="#000000" font-size="45" font-family="Verdana" x="100" y="78" text-anchor="middle">EN-</text>
+            </svg>
+            <h1>FAVORITE KPOP BOY BAND</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+       <img src="Screenshot_2023_1107_125041.png" alt="enhypen">
+        <h1>ENHYPEN</h1>
+        <section>
+          <h2>Management and Formation</h2>
+          <p>ENHYPEN was formed from the survival audition program I-LAND in 2020.</p>
+          <p>I-LAND was co-produced by CJ ENM and HYBE and aired on MNET. Prior to I-LAND airing, CJ ENM and Bighit Entertainment jointly established BELIFT LAB, where ENHYPEN debuted.</p>
+          <p>BELIFT LAB had been specifically established to manage a group that was to debut from the jointly produced survival audition program, and therefore there had been no other promoting groups/soloist under BELIFT LAB for almost 3 years before I-LAND aired.</p>
+          <p>In November 2023, BELIFT LAB was acquired by HYBE and became one of its subsidiary labels.</p>
+          <p>Heeseung, Sunghoon, Jay, and Jungwon had been trainees of Bighit Entertainment before they transferred to BELIFT LAB in order to participate in I-LAND. They were offered the opportunity by the management and ultimately made the choice themselves.</p>
+          <p>Jake, Sunoo, and Ni-ki started out as trainees in BELIFT LAB, after passing auditions held by BELIFT LAB.</p>
+          <p>Aside from Jungwon’s official position as leader, there are no official positions within ENHYPEN.</p>
+          <p>Jungwon, the leader, is the second youngest member of ENHYPEN which is a rare feat in K-Pop groups as most leader would be the eldest member of the team.</p>
+          <p>Heeseung is often regarded as the main vocal and Ni-ki is regarded as the main dancer within the fandom.</p>
+          <p>Bang Sihyuk (”Hitman” Bang) is the executive producer and Wonderkid is the main producer of ENHYPEN.</p>
+          <p>ENHYPEN’s overall concept, production, and performance directing is handled by the staff from Bighit Entertainment.</p>
+        </section>
+        <img src="iland.png" alt="enhypen members">
+        <section>
+        <h2>THE “VAMPIRE” CONCEPT</h2>
+        <p>ENHYPEN has consistently built on their unique lore of fantasy world where the members are vampires with accompanying webtoon and web-novel series of the DARK MOON franchise, including The Blood of Varg, Children of Vamfield, and The Blood Altar.</p>
+        <p>In their discography and lyrics, ENHYPEN uses the concept of vampires as a metaphor for the K-Pop entertainment industry and the relationship between the idols and their fans.</p>
+        <p>Much like the vampires who are on the “border” between life and death, the members of ENHYPEN have crossed the “border” from trainees to world-famous K-Pop idols.</p>
+        <p>Vampires only exist because of their “maker,” or the one who has “turned” them. Likewise, the members of ENHYPEN have debuted through the survival audition system with the support of the fans.</p>
+        <p>However, having debuted during the pandemic, ENHYPEN had never met their fans in real life until the first world tour. ENHYPEN makes allusions to this in their discography, using the themes of separation and longing across dimensions and timespaces.</p>
+        <p>In addition to their own lore, ENHYPEN has also made references to more classic literary themes such as Shakespeare’s sonnets and Greek mythology in their concepts.</p>
+        </section>
+        <section>
+    <a href="https://youtu.be/bCZ9Pb0lw9w?si=N_HIUVxHFojjWYt1" target="mv">
+    <img src="dark_moon.png" alt="dark moon">
+        </a>
+<h2>DARK MOON: THE BLOOD ALTAR (OFFICIAL STORY FILM)</h2>
+      </section>
+    </div>
+    
+    <div class="button-container">
+        <button id="backButton">Back to Articles</button>
+        <button id="nextButton">Previous Page</button>
+    </div>
+
+    <script>
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.location.href = "article.html"; // Replace with the actual URL of your article page
+        });
+
+        document.getElementById('nextButton').addEventListener('click', function() {
+            window.location.href = "myfavorite.html"; // Replace with the actual URL of the next page
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Removed background-color, we'll use a background image instead */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    background-image: url('Screenshot_2025_0105_195931.png'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat;
+        }
+
+header {
+    background-color: #fff; /* Added background color for better visual separation */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute logo and nav evenly */
+    align-items: center; /* Vertically align logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertically align logo and text */
+}
+
+.logo svg {
+    margin-right: 10px; /* Added margin between logo and text */
+}
+
+.logo h1 {
+    font-size: 2.5em; /* Increased font size for better readability */
+    font-weight: bold;
+    color: #000;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 20px;
+    position: relative; /* Needed for dropdown positioning */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+#articleDropdown {
+  position: absolute;
+  top: 100%; /* Position below the link */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 5px;
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+.dropdown-select {
+  width: 150px; /* Adjust width as needed */
+  padding: 5px;
+}
+
+        
+.intro-section {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+img {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%;
+            height: auto;
+            cursor: pointer;
+        }
+p{
+            font-family: verdana;
+            font-size: 20px;
+            text-align: justify;
+        
+        }
+
+header {
+    background-color: #fff; /* Added background color for better visual separation */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute logo and nav evenly */
+    align-items: center; /* Vertically align logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {  /* Style for the image */
+    width: 110px;  /* Adjust as needed */
+    height: 110px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.logo h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; /* Added margin for spacing between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Changed color for better contrast */
+}
+
+main {
+    width: 80%; /* Adjust as needed */
+    margin: 20px auto;
+    display: flex; /* Enable flexbox for the main section */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.intro-section {
+    display: flex; /* Enable flexbox for the intro section */
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Add spacing between image and text */
+}
+
+.image-container {
+    flex: 0 0 30%; /* Make the image take up 30% width */
+    max-width: 30%; /* Limit maximum width */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image fits the container */
+    height: auto;
+}
+
+.text-container {
+    flex: 1; /* Make the text container take up the remaining space */
+}
+
+.text-container h2 {
+    margin-top: 0;
+}
+
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center;
+    }
+    .image-container {
+        flex: 1 0 auto; /* Image takes full width on smaller screens */
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .text-container {
+        flex: 1 0 auto; /* Text takes full width on smaller screens */
+        max-width: 100%;
+    }
+}
