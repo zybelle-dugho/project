@@ -6,7 +6,7 @@ body {
     align-items: center;
     min-height: 100vh; 
     margin: 0;
-    background-image: url('background.png'); /* Add your image path here */
+    background-image: url('images/background.png'); /* Add your image path here */
     background-size: cover; /* Cover the entire viewport */
     background-repeat: no-repeat;
         }
