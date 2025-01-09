@@ -4,7 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorites</title>
-    <link rel="stylesheet" href="favorite.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    /* Removed background-color, we'll use a background image instead */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    background-image: url('images/FB_IMG_1699333647441.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat;
+        }
+
+header {
+    background-color: #fff; /* Added background color for better visual separation */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute logo and nav evenly */
+    align-items: center; /* Vertically align logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertically align logo and text */
+}
+
+.logo svg {
+    margin-right: 10px; /* Added margin between logo and text */
+}
+
+.logo h1 {
+    font-size: 2.5em; /* Increased font size for better readability */
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; /* Added margin for spacing between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Changed color for better contrast */
+}
+        
+.container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+img {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%;
+            height: auto;
+            cursor: pointer;
+        }
+p{
+            font-family: verdana;
+            font-size: 20px;
+            text-align: justify;
+}        
+
+/* ... your existing CSS ... */
+
+.button-container {
+    display: flex; /* Enable flexbox for horizontal arrangement */
+    justify-content: space-around; /* Distribute buttons evenly */
+    margin-top: 20px;
+}
+
+#backButton, #nextButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px; /* Add some margin between buttons */
+}
+
+        
+    </style>
 </head>
 <body>
     <header>
